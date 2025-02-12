@@ -4,23 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>警告！ウイルスが検出されました</title>
+    <title>ウイルスが検出されました</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="warning-box">
-        <h1>⚠ 警告！</h1>
-        <p>あなたのAndroidデバイスはウイルスに感染しています！</p>
-        <p>今すぐスキャンして削除してください！</p>
+        <h1>⚠ 警告</h1>
+        <p>あなたのAndroidデバイスはウイルスに感染している可能性があります</p>
+        <p>今すぐスキャンしてクリーンナップしてください！</p>
         <button onclick="fakeScan()">ウイルスを削除</button>
     </div>
     <script>
         function fakeScan() {
             alert('スキャンを開始します…');
             setTimeout(() => {
-                alert('ウイルス100個検出！');
+                alert('ウイルスを検出しました');
                 setTimeout(() => {
-                    alert('…なんちゃって！ドッキリ成功！😂');
+                    alert('今すぐクリーンナップしてください');
                 }, 2000);
             }, 2000);
         }
